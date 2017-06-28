@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random Password Generator</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/animate.css">>
+  <link rel="stylesheet" href="../CSS/passGen.css">
+  <script src="../JS/passGen.js" type="text/javascript"></script>
+  <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+</head>
+<body>
+<div class="container">
+<h1 class="display-1 animated  infinite bounce"><i class="fa fa-lock"></i> Random Password Generator</h1>
+<br><br>
+<form name="myform">
+<div class="input">
+<span class="lead">Password Length:</span>
+<input type="number"  maxlength="2" name="len" value="4">
+</div>
+<br><br>
+<div class="row">
+<div class="col-md-12 gen">
+  <input type="text"  name="gen" placeholder="Generated Password">
+</div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-md-12">
+    <!-- <input value="Generate" class="btn btn-danger btn-lg" onclick="populate(this.form.len.value)"> -->
+  <button type="button" data-toggle="tooltip" data-placement="top"  title="Password gets generated every time you click the button!" class="btn btn-danger btn-lg" onclick="populate(this.form.len.value)"><i class="fa fa-key"></i> Generate</button>
+  </div>
+</div>
+</form>
+</div>
+</body>
+</html>

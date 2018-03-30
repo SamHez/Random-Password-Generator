@@ -1,6 +1,6 @@
 function generate(len)
 {
-var keys="abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*<>?/:~";
+var keys="abcdefghijklmnopqrstuvwxyz1234567890";
 var text="";
 for(var i=0;i<len;i++)
 {
